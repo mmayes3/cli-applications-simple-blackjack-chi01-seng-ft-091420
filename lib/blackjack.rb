@@ -45,8 +45,9 @@ def hit?(initial_round)
     return ir
   else
     invalid_command
+    
   end
-  prompt_user
+  
   hit?(ir)
 end
 
