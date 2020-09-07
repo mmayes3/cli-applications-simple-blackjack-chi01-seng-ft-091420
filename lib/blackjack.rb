@@ -31,9 +31,6 @@ def initial_round
   return sum
 end
 
-def invalid_command
-  puts "Please enter a valid command"
-end
 
 def hit?(initial_round)
   prompt_user
@@ -49,6 +46,9 @@ def hit?(initial_round)
   end
 end
 
+def invalid_command
+  puts "Please enter a valid command"
+end
 
 # def runner
 #   welcome
