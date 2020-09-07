@@ -44,8 +44,8 @@ def hit?(initial_round)
   elsif y == 's'
     return ir
   else
-    prompt_user
     invalid_command
+    prompt_user
   end
 end
 
