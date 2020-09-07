@@ -57,12 +57,11 @@ def runner
   g = get_user_input
   if g == 's'
     prompt_user
-  else
-    until ct > 21
-      ct = hit?(ct)
-      display_card_total(ct)
-    end
-    end_game(ct)
   end
+  until ct > 21
+    ct = hit?(ct)
+    display_card_total(ct)
+  end
+  end_game(ct)
 end
     
