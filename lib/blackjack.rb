@@ -37,12 +37,10 @@ end
 
 def hit?(initial_round)
   prompt_user
-  
-  ir = initial_round
   if get_user_input == 'h'
     return initial_round += deal_card
-  elsif  == 's'
-    return ir
+  elsif get_user_input == 's'
+    return initial_round
   else
     invalid_command
     prompt_user
