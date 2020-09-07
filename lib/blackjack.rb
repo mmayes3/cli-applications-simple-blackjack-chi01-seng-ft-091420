@@ -53,11 +53,7 @@ end
 def runner
   welcome
   ct = initial_round
-  prompt_user
-  g = get_user_input
-  if g == 's'
-    prompt_user
-  end
+
   until ct > 21
     ct = hit?(ct)
     display_card_total(ct)
