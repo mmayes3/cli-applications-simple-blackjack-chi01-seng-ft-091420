@@ -50,21 +50,21 @@ def hit?(initial_round)
 end
 
 
-# def runner
-#   welcome
-#   initial_round
-#   prompt_user
-#   y = prompt_user
-#   if y == 's'
-#     prompt_user
-#   else
-#     deal_card
-#     new_total = deal_card + initial_round
+def runner
+  welcome
+  initial_round
+  prompt_user
+  y = prompt_user
+  if y == 's'
+    prompt_user
+  else
+    deal_card
+    new_total = deal_card + initial_round
 
-#     while new_total < 21
-#       new_total = hit?(new_total)
-#       display_card_total(new_total)
-#     end
-#     end_game(new_total)
-# end
+    while new_total < 21
+      new_total = hit?(new_total)
+      display_card_total(new_total)
+    end
+    end_game(new_total)
+end
     
