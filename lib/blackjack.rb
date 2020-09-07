@@ -52,15 +52,14 @@ end
 
 def runner
   welcome
-  initial_round
+  ir = initial_round
   prompt_user
-  y = prompt_user
-  if y == 's'
+  g = get_user_input
+ 
+  if g == 's'
     prompt_user
   else
-    deal_card
-    new_total = deal_card + initial_round
-
+    new_total = deal_card + ir
     while new_total < 21
       new_total = hit?(new_total)
       display_card_total(new_total)
